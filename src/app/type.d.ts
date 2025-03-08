@@ -1,8 +1,8 @@
 type Blog = {
-    title: string,
-    paragraph: string,
-    slug: string,
-    image: any,
-    content: string,
-    tag: string[]
-}
+    title: string;
+    paragraph: string;
+    slug: string;
+    image: string;   // ✅ Fixed
+    content: string;
+    tag: string[];
+};
