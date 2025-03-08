@@ -1,5 +1,6 @@
 import { urlFor } from "@/sanity/lib/image";
 import Link from "next/link";
+import Image from "next/image";
 import React from "react";
 
 const Hero = ({ data }: { data: Blog }) => {
@@ -10,10 +11,12 @@ const Hero = ({ data }: { data: Blog }) => {
           <div className="flex flex-wrap -m-4">
             <div className="p-4 md:w-1/3">
               <div className="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
-                <img
+                <Image
                   className="lg:h-48 md:h-36 w-full object-cover object-center"
                   src={urlFor(data.image).url()}
                   alt="blog"
+                  width={100}
+                  height={100}
                 />
                 <div className="p-6">
                   <h1 className="title-font text-lg font-medium text-gray-900 mb-3">
