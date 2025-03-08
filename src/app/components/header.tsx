@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 const Header = () => {
@@ -9,9 +10,15 @@ const Header = () => {
             <span className="ml-3 text-xl">Saddam Khan</span>
           </a>
           <nav className="md:ml-auto flex flex-wrap items-center text-base justify-center">
-            <a className="mr-5 hover:text-gray-900">Home</a>
-            <a className="mr-5 hover:text-gray-900">About</a>
-            <a className="mr-5 hover:text-gray-900">Blog</a>
+            <Link href={"#"} className="mr-5 hover:text-gray-900">
+              Home
+            </Link>
+            <Link href={"#"} className="mr-5 hover:text-gray-900">
+              About
+            </Link>
+            <Link href={"#"} className="mr-5 hover:text-gray-900">
+              Blog
+            </Link>
           </nav>
         </div>
       </header>
